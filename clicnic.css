@@ -1,10 +1,16 @@
 body{
 	margin: 0;
-	background-color: #FFCCCC;
+	background-color: #FFD9EC;
 }
 
-h1,ul,li{
+h1,ul,li,h2,p{
 	margin: 0;
+}
+
+#logo{
+	font-family: 'Pacifico', cursive;
+	margin-top: 10px;
+	font-size: 50px;
 }
 
 header{
@@ -19,8 +25,8 @@ header{
 .header_logo{
 	display: inline-block;
 	width: 200px;
-	height: 50px;
-	margin-left: 10%;
+	height: 100px;
+	margin-left: 5%;
 }
 
 .header_link
@@ -35,17 +41,32 @@ header{
 	text-decoration:none;
 }
 
-.header_link li{
+.header_link a:visited{
+	color: black;
+}
 
-	background-color: 	#FFBB66;
-	width: 80px;
+
+.header_link a:hover{
+	color: red;
+}
+
+
+.header_link a:active{
+	color: blue;
+}
+
+.header_link li{
+	border-style: outset;
+	background-color: #FFBB66;
+	width: 140px;
 	height: 60px;
 	display: inline-block;
 	list-style: none;
 }
 
 .header_link li p{
-	margin-top: 20px;
+	font-size: 30px;
+	margin-top: 10px;
 }
 
 main{
@@ -59,15 +80,33 @@ main{
 }
 
 main a{
+
 	text-decoration:none;
 }
 
+main a:visited{
+	color: red;
+}
+
+main a:hover{
+	color: black;
+}
+
+main a:active{
+	color: blue;
+}
+
+
 main p{
+	font-size: 40px;
+	font-family: 'Pacifico', cursive;
 	margin-left: 40px;
 	margin-top: 40px;
 }
 
 .main_left{
+	background-image: url(./pic/baby.jpg);
+	background-size: contain;
 	float: left;
 	width: 30%;
 	height: 300px;
@@ -75,6 +114,8 @@ main p{
 }
 
 .main_center{
+	background-image: url(./pic/health.jpg);
+	background-size: cover;
 	float: left;
 	width: 40%;
 	height: 300px;
@@ -82,6 +123,8 @@ main p{
 }
 
 .main_right{
+	background-image: url(./pic/fitness.jpg);
+	background-size: cover;
 	float: right;
 	width: 30%;
 	height: 300px;
@@ -89,6 +132,8 @@ main p{
 }
 
 #main_span{
+	background-image: url(./pic/lifegood.jpg);
+	background-size: cover;
 	margin-top: 300px;
 	width: 100%;
 	height: 600px;
@@ -105,10 +150,57 @@ footer{
 	background-color: #BBFFEE;
 }
 
-#table{
+#open_info{
+	font-family: 'Pacifico', cursive;
 	float: right;
-	border:3px #cccccc solid;
+	width: 588px;
+	height: 100px;
+	margin-right: 10%;
+}
+
+#open_info p{
+	font-family: 'Pacifico', cursive;
+	font-size: 20px;
+}
+
+#table{
+	margin-right: 10%;
+	clear: right;
+	background-color: #f5f5f5;
+	float: right;
+	border:1px solid #e5e5e5;
 	width: 20%; 
 	height:600px; 
+}
+
+#place{
+	background-color: #888888;
+	
+	float: left;
+	width: 50%;
+	height: 900px;
+}
+
+.googleMap{
+
+}
+
+
+.buttom{
+	position: absolute;
+	left: 50%;
+	margin-top: 1920px;
+	margin-left: -40%;
+	width: 80%;
+	height: 100px;
+	background-color: #000000;
+}
+
+.buttom p{
+	display: inline-block;
+	margin-top: 10px;
+	margin-left: 50px;
+	font-size: 30px;
+	color: #FFFFFF;
 }
 

@@ -6,9 +6,10 @@
 	<script type="text/javascript" src="clicnic.js"></script>
 </head>
 <body>
+	
 	<header>
 		<div class="header_logo">
-			<h1>惠恩診所</h1>
+			<p id="logo">惠恩診所</p>
 		</div>
 		<div class="header_link">
 			<ul>
@@ -30,14 +31,36 @@
 	</main>
 	<!-- contain end -->
 	<footer>
-		<div></div>
+		<div id="place">
+		  	<h2>診所位置:</h2>
+		  	<div id="googleMap">
+		  		<script type="text/javascript">
+		  			function myMap() {
+		  				var mapProp = {
+		  					center:new
+		  					google.maps.LatLng(51.508742,-0.120850),
+	    zoom:5,
+	};
+		  				}
+		  			}
+		  		</script>
+		  	</div>
+		</div>
 
+		<div id="open_info">
+			<h2>門診時間表:</h2>
+			<br>
+			<p>上午:09:00~12:00/下午:16:00~18:00/晚上:19:30~21:00</p>
+		</div>
 		<table id="table" cellpadding="10" border='1' ;>
 	       <tr height="50"><td></td><td>Monday</td><td>Tuesday</td><td>Wednesday</td><td>Thursday</td><td>Friday</td><td>Saturday</td><td>Sunday</td></tr>
-		   <tr><td>上午</td><td>這是表格欄位</td><td>這是表格欄位</td><td>這是表格欄位</td><td>這是表格欄位</td><td>這是表格欄位</td><td>這是表格欄位</td><td>這是表格欄位</td></tr>
+		   <tr><td>上午</td><td>營業</td><td>這是表格欄位</td><td>這是表格欄位</td><td>這是表格欄位</td><td>這是表格欄位</td><td>這是表格欄位</td><td>這是表格欄位</td></tr>
 		   <tr><td>下午</td><td>這是表格欄位</td><td>這是表格欄位</td><td>這是表格欄位</td><td>這是表格欄位</td><td>這是表格欄位</td><td>這是表格欄位</td><td>這是表格欄位</td></tr>
 		   <tr><td>晚上</td><td>這是表格欄位</td><td>這是表格欄位</td><td>這是表格欄位</td><td>這是表格欄位</td><td>這是表格欄位</td><td>這是表格欄位</td><td>這是表格欄位</td></tr>
 		</table>
 	</footer>
+	<div class="buttom">
+			<p>© 2017 惠恩診所&nbsp;&nbsp;&nbsp;聯絡電話:02-23919572</p> 
+	</div>
 </body>
 </html>

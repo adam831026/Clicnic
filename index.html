@@ -35,15 +35,20 @@
 		  	<h2>診所位置:</h2>
 		  	<div id="googleMap">
 		  		<script type="text/javascript">
-		  			function myMap() {
-		  				var mapProp = {
-		  					center:new
-		  					google.maps.LatLng(51.508742,-0.120850),
-	    zoom:5,
-	};
-		  				}
+		  			function initMap() {
+		  				var uluru ={lat:25.040065 , lng:121.531074};
+		  				var map = new google.maps.Map(document.getElementById('googleMap'),{
+		  					zoom:19,
+		  					center:uluru
+		  				});
+		  				var marker = new google.maps.Marker({
+		  					position:uluru,
+		  					map:map
+		  				});
+
 		  			}
 		  		</script>
+		  		<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBsFKuK5FpsEEEHHkg3zHM0R7y_ePuyC0o&callback=initMap"></script>
 		  	</div>
 		</div>
 
